@@ -85,3 +85,10 @@ table {
           left: 100px;
         }
       }
+.pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
