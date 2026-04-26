@@ -86,11 +86,11 @@ table {
         }
       }
 .pseudo-list li:nth-child(odd) {
-        background-color: lightgray;
+        background-color: orange;
       }
       
       .pseudo-list li:nth-child(even) {
-        background-color: white;
+        background-color: lightblue;
       }
 .filter-image {
         filter: grayscale(100%);
