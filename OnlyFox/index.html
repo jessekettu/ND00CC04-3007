@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlyFoxes — Exclusive Fox Content</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-fox">🦊</span>
+    <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+  </a>
+
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Browse</a></li>
+      <li><a href="profile.html">Profiles</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="subscribe.html">Subscribe</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <a href="login.html" class="btn btn-outline btn-sm">Log in</a>
+    <a href="subscribe.html" class="btn btn-primary btn-sm">Join Free</a>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="active">Browse</a>
+  <a href="profile.html">Profiles</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="subscribe.html">Subscribe</a>
+  <a href="subscribe.html" class="btn btn-primary mobile-cta" style="text-align:center;border-radius:999px;">Join Free</a>
+</div>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+
+  <div class="hero-img-wrap">
+    <img
+      src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1200&q=80"
+      alt="Red fox in snowy forest"
+      loading="eager"
+    />
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-pill">
+      <span class="dot"></span>
+      3,400+ creators live right now
+    </div>
+
+    <h1>
+      Where<br>
+      <span class="line2">Foxes</span><br>
+      <em>Shine.</em>
+    </h1>
+
+    <p class="hero-sub">
+      The premier destination for exclusive fox content. Follow your favourite
+      foxes, unlock behind-the-scenes moments, and support the fluffiest
+      creators on the internet.
+    </p>
+
+    <div class="hero-actions">
+      <a href="subscribe.html" class="btn btn-primary btn-lg">Start for Free</a>
+      <a href="gallery.html" class="btn btn-outline btn-lg">Browse Gallery</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-n">12K+</span>
+        <span class="stat-l">Fox Creators</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">2.4M</span>
+        <span class="stat-l">Subscribers</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">98%</span>
+        <span class="stat-l">Fluffiness Rate</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FEATURED CREATORS ====== -->
+<div class="section reveal" id="creators">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Top Creators</p>
+      <h2 class="section-title">Featured Foxes This Week</h2>
+    </div>
+    <a href="profile.html" class="btn btn-ghost btn-sm">View all →</a>
+  </div>
+
+  <div class="creators-grid">
+
+    <!-- Card 1 -->
+    <a href="profile.html" class="creator-card" style="animation-delay:0.05s">
+      <div class="card-cover">
+        <img
+          src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=600&h=340&q=80"
+          alt="Foxette Savannah cover"
+          loading="lazy"
+        />
+        <span class="card-tag gold">⭐ Top 1%</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <img
+            class="card-avatar"
+            src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=100&h=100&q=80"
+            alt="Foxette"
+            loading="lazy"
+          />
+          <div>
+            <div class="card-name">Foxette Savannah</div>
+            <div class="card-handle">@foxette</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>🖼 248 posts</span>
+            <span>👥 14.2K</span>
+          </div>
+          <div class="card-price">9,99 mk/mo</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="profile.html" class="creator-card" style="animation-delay:0.1s">
+      <div class="card-cover">
+        <img
+          src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=600&h=340&q=80"
+          alt="Arctic Frost cover"
+          loading="lazy"
+        />
+        <span class="card-tag">🆕 New</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <img
+            class="card-avatar"
+            src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=100&h=100&q=80"
+            alt="Arctic Frost"
+            loading="lazy"
+          />
+          <div>
+            <div class="card-name">Arctic Frost</div>
+            <div class="card-handle">@arcticfox</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>🖼 87 posts</span>
+            <span>👥 3.1K</span>
+          </div>
+          <div class="card-price">Free</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="profile.html" class="creator-card" style="animation-delay:0.15s">
+      <div class="card-cover">
+        <img
+          src="https://images.unsplash.com/photo-1506657047594-19a6c6a72bd0?auto=format&fit=crop&w=600&h=340&q=80"
+          alt="Rusty Tails cover"
+          loading="lazy"
+        />
+        <span class="card-tag">🔥 Trending</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <img
+            class="card-avatar"
+            src="https://images.unsplash.com/photo-1506657047594-19a6c6a72bd0?auto=format&fit=crop&w=100&h=100&q=80"
+            alt="Rusty Tails"
+            loading="lazy"
+          />
+          <div>
+            <div class="card-name">Rusty Tails</div>
+            <div class="card-handle">@rustytails</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>🖼 412 posts</span>
+            <span>👥 22.7K</span>
+          </div>
+          <div class="card-price">4,99 mk/mo</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="profile.html" class="creator-card" style="animation-delay:0.2s">
+      <div class="card-cover">
+        <img
+          src="https://images.unsplash.com/photo-1621207184138-1806f6f5ecbb?auto=format&fit=crop&w=600&h=340&q=80"
+          alt="Fennec Fabulous cover"
+          loading="lazy"
+        />
+        <span class="card-tag gold">⭐ Top 3%</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <img
+            class="card-avatar"
+            src="https://images.unsplash.com/photo-1621207184138-1806f6f5ecbb?auto=format&fit=crop&w=100&h=100&q=80"
+            alt="Fennec Fabulous"
+            loading="lazy"
+          />
+          <div>
+            <div class="card-name">Fennec Fabulous</div>
+            <div class="card-handle">@fennec</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>🖼 191 posts</span>
+            <span>👥 9.4K</span>
+          </div>
+          <div class="card-price">7,99 mk/mo</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 5 -->
+    <a href="profile.html" class="creator-card" style="animation-delay:0.25s">
+      <div class="card-cover">
+        <img
+          src="https://images.unsplash.com/photo-1708975425471-7031e4a6007e?auto=format&fit=crop&w=600&h=340&q=80"
+          alt="Vixenne cover"
+          loading="lazy"
+        />
+        <span class="card-tag">🌙 Night Fox</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <img
+            class="card-avatar"
+            src="https://images.unsplash.com/photo-1708975425471-7031e4a6007e?auto=format&fit=crop&w=100&h=100&q=80"
+            alt="Vixenne"
+            loading="lazy"
+          />
+          <div>
+            <div class="card-name">Vixenne</div>
+            <div class="card-handle">@vixenne</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>🖼 339 posts</span>
+            <span>👥 18.1K</span>
+          </div>
+          <div class="card-price">12,99 mk/mo</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 6 -->
+    <a href="profile.html" class="creator-card" style="animation-delay:0.3s">
+      <div class="card-cover">
+        <img
+          src="https://images.unsplash.com/photo-1727891521863-ba8c598bad4e?auto=format&fit=crop&w=600&h=340&q=80"
+          alt="Shadow Brush cover"
+          loading="lazy"
+        />
+        <span class="card-tag">🆕 New</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <img
+            class="card-avatar"
+            src="https://images.unsplash.com/photo-1727891521863-ba8c598bad4e?auto=format&fit=crop&w=100&h=100&q=80"
+            alt="Shadow Brush"
+            loading="lazy"
+          />
+          <div>
+            <div class="card-name">Shadow Brush</div>
+            <div class="card-handle">@shadowfox</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>🖼 55 posts</span>
+            <span>👥 1.8K</span>
+          </div>
+          <div class="card-price">Free</div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- ====== TRENDING MOSAIC ====== -->
+<div class="trending-band reveal">
+  <div class="trending-inner">
+    <div class="section-head">
+      <div>
+        <p class="section-label">Hot Right Now</p>
+        <h2 class="section-title">Trending Moments</h2>
+      </div>
+      <a href="gallery.html" class="btn btn-ghost btn-sm">Full gallery →</a>
+    </div>
+
+    <div class="mosaic">
+      <div class="mosaic-item">
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=400&q=75" alt="Winter fox" loading="lazy" />
+        <div class="mosaic-overlay"><span>❄️ Winter Stroll</span></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=400&q=75" alt="Fox in nature" loading="lazy" />
+        <div class="mosaic-overlay"><span>🍂 Autumn Light</span></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="https://images.unsplash.com/photo-1607601544426-03e97b863e09?auto=format&fit=crop&w=400&q=75" alt="Fox kit" loading="lazy" />
+        <div class="mosaic-overlay"><span>🌸 Morning Glow</span></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=400&q=75" alt="Fox portrait" loading="lazy" />
+        <div class="mosaic-overlay"><span>🎭 Portrait Series</span></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="https://images.unsplash.com/photo-1580501170888-80668882d0b0?auto=format&fit=crop&w=400&q=75" alt="Fox close-up" loading="lazy" />
+        <div class="mosaic-overlay"><span>🔍 Close &amp; Personal</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== WHY ONLYFOXES ====== -->
+<div class="section reveal">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Why us</p>
+      <h2 class="section-title">Built for Fox Lovers</h2>
+    </div>
+  </div>
+
+  <div class="features-grid">
+    <div class="feat-card">
+      <div class="feat-icon">🔒</div>
+      <h3>Exclusive Content</h3>
+      <p>Unlock posts, behind-the-scenes clips, and personal messages from your favourite fox creators.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">💌</div>
+      <h3>Direct Messages</h3>
+      <p>Chat directly with creators. Ask about their habitats, favourite foods, and fluffiest moments.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">📸</div>
+      <h3>HD Photo Sets</h3>
+      <p>Full-resolution photo sets delivered in stunning quality — every whisker in perfect detail.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔔</div>
+      <h3>Live Alerts</h3>
+      <p>Get notified the instant your favourite fox goes live or drops new exclusive content.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🎁</div>
+      <h3>Tip Your Fox</h3>
+      <p>Send tips to show extra love and unlock personalized shout-outs and custom photo sets.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🛡️</div>
+      <h3>Safe &amp; Secure</h3>
+      <p>Your subscription and personal data are protected with industry-leading encryption.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====== CTA BANNER ====== -->
+<div class="section-sm" style="padding-top:0">
+  <div style="
+    background: linear-gradient(135deg, #1C1108 0%, var(--surface-2) 100%);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 3.5rem 2.5rem;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 2rem; flex-wrap: wrap;
+    max-width: 1300px; margin: 0 auto;
+    position: relative; overflow: hidden;
+  " class="reveal">
+    <div style="position:absolute;right:-40px;top:-40px;width:280px;height:280px;
+      background:radial-gradient(circle, rgba(245,90,26,0.12), transparent);
+      border-radius:50%;pointer-events:none;"></div>
+    <div>
+      <h2 style="font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:0.5rem;">Ready to meet your fox? 🦊</h2>
+      <p style="color:var(--text-muted);font-size:0.95rem;max-width:420px;">
+        Join over 2.4 million subscribers who already enjoy exclusive fox content every day.
+      </p>
+    </div>
+    <a href="subscribe.html" class="btn btn-gold btn-lg">Get Started Free →</a>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-fox">🦊</span>
+        <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+      </a>
+      <p>The world's most exclusive platform for fox content creators and their devoted fans.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="index.html">Browse Creators</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="profile.html">Top Profiles</a></li>
+        <li><a href="gallery.html">Trending</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Account</h5>
+      <ul>
+        <li><a href="subscribe.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="subscribe.html">Subscription Plans</a></li>
+        <li><a href="login.html">Settings</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 OnlyFoxes. All rights reserved. 🦊</p>
+    <p>Made with love for foxes everywhere.</p>
+  </div>
+</footer>
+
+<script>
+  // Hamburger menu
+  const ham = document.getElementById('ham');
+  const mobileNav = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => io.observe(r));
+</script>
+</body>
+</html>

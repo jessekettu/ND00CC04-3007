@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join OnlyFoxes — Start for Free</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-fox">🦊</span>
+    <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+  </a>
+
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html">Browse</a></li>
+      <li><a href="profile.html">Profiles</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="subscribe.html" class="active">Subscribe</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <a href="login.html" class="btn btn-outline btn-sm">Log in</a>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Browse</a>
+  <a href="profile.html">Profiles</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="subscribe.html" class="active">Subscribe</a>
+  <a href="login.html" class="btn btn-outline mobile-cta" style="text-align:center;border-radius:999px;">Log in</a>
+</div>
+
+<!-- ====== SUBSCRIBE MAIN ====== -->
+<div class="subscribe-wrap">
+  <div class="subscribe-bg"></div>
+
+  <div class="sub-grid">
+
+    <!-- Left: value prop -->
+    <div class="sub-left">
+      <p class="section-label">Join the Den</p>
+      <h1>Meet Your Perfect Fox. 🦊</h1>
+      <p>Create a free account and get instant access to thousands of fox creators sharing exclusive content every day.</p>
+
+      <div class="sub-perks">
+        <div class="sub-perk">
+          <div class="perk-icon">🔒</div>
+          <div class="perk-text">
+            <strong>Exclusive Content</strong>
+            <span>Unlock behind-the-scenes posts and personal messages from your favourite fox creators.</span>
+          </div>
+        </div>
+        <div class="sub-perk">
+          <div class="perk-icon">💌</div>
+          <div class="perk-text">
+            <strong>Direct Messages</strong>
+            <span>Chat directly with creators. Ask about their habitats and fluffiest moments.</span>
+          </div>
+        </div>
+        <div class="sub-perk">
+          <div class="perk-icon">📸</div>
+          <div class="perk-text">
+            <strong>HD Photo Sets</strong>
+            <span>Full-resolution photo sets delivered in stunning quality — every whisker in perfect detail.</span>
+          </div>
+        </div>
+        <div class="sub-perk">
+          <div class="perk-icon">🔔</div>
+          <div class="perk-text">
+            <strong>Live Alerts</strong>
+            <span>Get notified the instant your favourite fox goes live or drops new content.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats" style="margin-top:2.5rem;">
+        <div class="stat">
+          <span class="stat-n">12K+</span>
+          <span class="stat-l">Fox Creators</span>
+        </div>
+        <div class="stat">
+          <span class="stat-n">2.4M</span>
+          <span class="stat-l">Subscribers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-n">Free</span>
+          <span class="stat-l">To Start</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: sign-up form -->
+    <div class="form-card" id="formCard">
+
+      <div id="formInner">
+        <h2>Create your account</h2>
+        <p class="sub-head">Already have one? <a href="login.html" style="color:var(--primary);">Log in →</a></p>
+
+        <div class="form-row-2">
+          <div class="fg">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" placeholder="Luna" autocomplete="given-name" />
+          </div>
+          <div class="fg">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" placeholder="Fox" autocomplete="family-name" />
+          </div>
+        </div>
+
+        <div class="fg">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="luna@example.com" autocomplete="email" />
+        </div>
+
+        <div class="fg">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="At least 8 characters" autocomplete="new-password" />
+        </div>
+
+        <div class="fg">
+          <label>Choose your plan</label>
+          <div class="plan-grid">
+            <div class="plan-opt">
+              <input type="radio" name="plan" id="planFree" value="free" checked />
+              <label class="plan-lbl" for="planFree">
+                <span class="plan-price-tag">Free</span>
+                <span class="plan-name-tag">Basic</span>
+              </label>
+            </div>
+            <div class="plan-opt">
+              <input type="radio" name="plan" id="planFox" value="fox" />
+              <label class="plan-lbl" for="planFox">
+                <span class="plan-price-tag">9,99 mk</span>
+                <span class="plan-name-tag">Fox Friend</span>
+              </label>
+            </div>
+            <div class="plan-opt">
+              <input type="radio" name="plan" id="planAlpha" value="alpha" />
+              <label class="plan-lbl" for="planAlpha">
+                <span class="plan-price-tag">19,99 mk</span>
+                <span class="plan-name-tag">Alpha Fox</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="check-row">
+          <input type="checkbox" id="terms" />
+          <label for="terms">I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a></label>
+        </div>
+
+        <div class="check-row">
+          <input type="checkbox" id="marketing" checked />
+          <label for="marketing">Send me fox news, creator updates, and exclusive offers</label>
+        </div>
+
+        <p id="formError" style="color:#EF4444;font-size:0.82rem;margin-bottom:0.75rem;display:none;"></p>
+
+        <button class="btn btn-primary btn-block btn-lg" id="submitBtn" type="button">
+          Create Free Account
+        </button>
+
+        <p style="text-align:center;font-size:0.78rem;color:var(--text-dim);margin-top:1rem;">
+          No credit card required for the Free plan.
+        </p>
+      </div>
+
+      <!-- Success state -->
+      <div class="success-box" id="successBox">
+        <div class="s-icon">🦊</div>
+        <h3>Welcome to the den!</h3>
+        <p>Your account is ready. Start exploring exclusive fox content right now.</p>
+        <a href="index.html" class="btn btn-primary btn-lg" style="margin-top:1.5rem;">Browse Creators →</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-fox">🦊</span>
+        <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+      </a>
+      <p>The world's most exclusive platform for fox content creators and their devoted fans.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="index.html">Browse Creators</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="profile.html">Top Profiles</a></li>
+        <li><a href="gallery.html">Trending</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Account</h5>
+      <ul>
+        <li><a href="subscribe.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="subscribe.html">Subscription Plans</a></li>
+        <li><a href="login.html">Settings</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 OnlyFoxes. All rights reserved. 🦊</p>
+    <p>Made with love for foxes everywhere.</p>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const ham = document.getElementById('ham');
+  const mobileNav = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
+
+  // Form submission
+  const submitBtn = document.getElementById('submitBtn');
+  const formError = document.getElementById('formError');
+
+  submitBtn.addEventListener('click', () => {
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName  = document.getElementById('lastName').value.trim();
+    const email     = document.getElementById('email').value.trim();
+    const password  = document.getElementById('password').value;
+    const terms     = document.getElementById('terms').checked;
+
+    formError.style.display = 'none';
+
+    if (!firstName || !lastName) {
+      showError('Please enter your first and last name.');
+      return;
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      showError('Please enter a valid email address.');
+      return;
+    }
+    if (password.length < 8) {
+      showError('Password must be at least 8 characters.');
+      return;
+    }
+    if (!terms) {
+      showError('Please agree to the Terms of Service and Privacy Policy.');
+      return;
+    }
+
+    // Simulate sign-up
+    submitBtn.textContent = 'Creating account…';
+    submitBtn.disabled = true;
+    setTimeout(() => {
+      document.getElementById('formInner').style.display = 'none';
+      document.getElementById('successBox').classList.add('visible');
+    }, 1200);
+  });
+
+  function showError(msg) {
+    formError.textContent = msg;
+    formError.style.display = 'block';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fox Gallery — OnlyFoxes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-fox">🦊</span>
+    <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+  </a>
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html">Browse</a></li>
+      <li><a href="profile.html">Profiles</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="subscribe.html">Subscribe</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <a href="login.html" class="btn btn-outline btn-sm">Log in</a>
+    <a href="subscribe.html" class="btn btn-primary btn-sm">Join Free</a>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Browse</a>
+  <a href="profile.html">Profiles</a>
+  <a href="gallery.html" class="active">Gallery</a>
+  <a href="subscribe.html">Subscribe</a>
+  <a href="subscribe.html" class="btn btn-primary mobile-cta" style="text-align:center;border-radius:999px;">Join Free</a>
+</div>
+
+<!-- ====== GALLERY HERO ====== -->
+<div class="gallery-hero">
+  <p class="section-label">Visual Collection</p>
+  <h1>🦊 The Fox Gallery</h1>
+  <p style="margin-top:0.5rem;">Stunning moments from the wild — curated by our top creators.</p>
+</div>
+
+<!-- ====== SLIDESHOW ====== -->
+<div class="slideshow-wrap">
+  <div class="slideshow">
+    <div class="slides-viewport">
+
+      <div class="slide active">
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1400&q=80" alt="Winter fox" loading="eager" />
+        <div class="slide-cap">
+          <h3>❄️ Winter Wanderer</h3>
+          <p>Foxette Savannah on her morning hunt in Finnish Lapland</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=1400&q=80" alt="Fox portrait" loading="lazy" />
+        <div class="slide-cap">
+          <h3>🎭 Portrait Session</h3>
+          <p>Arctic Frost's iconic close-up series, autumn 2024</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=1400&q=80" alt="Fox in nature" loading="lazy" />
+        <div class="slide-cap">
+          <h3>🍂 Autumn Light</h3>
+          <p>Rusty Tails captures the golden hour magic</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1607601544426-03e97b863e09?auto=format&fit=crop&w=1400&q=80" alt="Fox kit" loading="lazy" />
+        <div class="slide-cap">
+          <h3>🌸 New Beginnings</h3>
+          <p>Fennec Fabulous welcomes spring cubs</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1580501170888-80668882d0b0?auto=format&fit=crop&w=1400&q=80" alt="Fox close up" loading="lazy" />
+        <div class="slide-cap">
+          <h3>🔍 Close &amp; Personal</h3>
+          <p>Vixenne's signature macro photography series</p>
+        </div>
+      </div>
+
+    </div><!-- /slides-viewport -->
+
+    <div class="slide-ctrl">
+      <div class="slide-arrows">
+        <button class="sarrow" id="sPrev" aria-label="Previous">◀</button>
+        <button class="sarrow" id="sNext" aria-label="Next">▶</button>
+      </div>
+      <div class="slide-dots" id="slideDots"></div>
+      <button class="play-pause" id="playPause">⏸ Pause</button>
+    </div>
+  </div>
+</div>
+
+<!-- ====== MASONRY GALLERY ====== -->
+<div style="max-width:1300px;margin:0 auto;padding:0 2.5rem;">
+  <div class="section-head" style="margin-top:3rem;margin-bottom:0;">
+    <div>
+      <p class="section-label">All Photos</p>
+      <h2 class="section-title">Browse the Collection</h2>
+    </div>
+    <p style="font-size:0.85rem;color:var(--text-muted);align-self:flex-end;">Click any photo to enlarge</p>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters-bar" id="filterBar">
+    <button class="flt active" data-filter="all">All Foxes</button>
+    <button class="flt" data-filter="winter">❄️ Winter</button>
+    <button class="flt" data-filter="forest">🌲 Forest</button>
+    <button class="flt" data-filter="portrait">🎭 Portraits</button>
+    <button class="flt" data-filter="cubs">🐾 Cubs</button>
+    <button class="flt" data-filter="night">🌙 Night</button>
+  </div>
+
+  <!-- Masonry grid -->
+  <div class="masonry" id="masonryGrid">
+
+    <div class="mitem" data-tags="winter portrait" data-src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=800&q=80" data-cap="❄️ Winter Wanderer — @foxette">
+      <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=500&q=75" alt="Winter fox" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">❄️ Winter Wanderer</span></div>
+    </div>
+
+    <div class="mitem" data-tags="portrait forest" data-src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=800&q=80" data-cap="🎭 Portrait Series — @arcticfox">
+      <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=500&q=75" alt="Fox portrait" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🎭 Portrait Series</span></div>
+    </div>
+
+    <div class="mitem" data-tags="forest" data-src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=800&q=80" data-cap="🍂 Forest Walk — @rustytails">
+      <img src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=500&q=75" alt="Fox in forest" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🍂 Autumn Forest</span></div>
+    </div>
+
+    <div class="mitem" data-tags="cubs portrait" data-src="https://images.unsplash.com/photo-1607601544426-03e97b863e09?auto=format&fit=crop&w=800&q=80" data-cap="🌸 Spring Cubs — @fennec">
+      <img src="https://images.unsplash.com/photo-1607601544426-03e97b863e09?auto=format&fit=crop&w=500&q=75" alt="Fox cubs" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🌸 Spring Cubs</span></div>
+    </div>
+
+    <div class="mitem" data-tags="portrait night" data-src="https://images.unsplash.com/photo-1580501170888-80668882d0b0?auto=format&fit=crop&w=800&q=80" data-cap="🔍 Macro Portrait — @vixenne">
+      <img src="https://images.unsplash.com/photo-1580501170888-80668882d0b0?auto=format&fit=crop&w=500&q=75" alt="Fox close up" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🔍 Macro Portrait</span></div>
+    </div>
+
+    <div class="mitem" data-tags="forest" data-src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?auto=format&fit=crop&w=800&q=80" data-cap="🌿 Meadow Roam — @shadowfox">
+      <img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?auto=format&fit=crop&w=500&q=75" alt="Fox in meadow" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🌿 Meadow Roam</span></div>
+    </div>
+
+    <div class="mitem" data-tags="winter" data-src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=800&h=600&q=80" data-cap="🌨️ Snowfall Morning — @foxette">
+      <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=500&h=380&q=75" alt="Fox in snowfall" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🌨️ Snowfall Morning</span></div>
+    </div>
+
+    <div class="mitem" data-tags="night portrait" data-src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=800&h=1000&q=80" data-cap="🌙 Night Watch — @arcticfox">
+      <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=500&h=640&q=75" alt="Fox at night" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🌙 Night Watch</span></div>
+    </div>
+
+    <div class="mitem" data-tags="cubs forest" data-src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=800&h=600&q=80" data-cap="🍃 Siblings — @rustytails">
+      <img src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=500&h=380&q=75" alt="Fox siblings" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🍃 Siblings</span></div>
+    </div>
+
+    <div class="mitem" data-tags="portrait" data-src="https://images.unsplash.com/photo-1607601544426-03e97b863e09?auto=format&fit=crop&w=800&h=1000&q=80" data-cap="✨ Golden Hour — @fennec">
+      <img src="https://images.unsplash.com/photo-1607601544426-03e97b863e09?auto=format&fit=crop&w=500&h=640&q=75" alt="Fox golden hour" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">✨ Golden Hour</span></div>
+    </div>
+
+    <div class="mitem" data-tags="night" data-src="https://images.unsplash.com/photo-1580501170888-80668882d0b0?auto=format&fit=crop&w=800&h=600&q=80" data-cap="🔭 Stargazer — @vixenne">
+      <img src="https://images.unsplash.com/photo-1580501170888-80668882d0b0?auto=format&fit=crop&w=500&h=380&q=75" alt="Fox stargazing" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🔭 Stargazer</span></div>
+    </div>
+
+    <div class="mitem" data-tags="winter forest" data-src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?auto=format&fit=crop&w=800&h=1000&q=80" data-cap="🏔️ Highland Fox — @shadowfox">
+      <img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?auto=format&fit=crop&w=500&h=640&q=75" alt="Highland fox" loading="lazy" />
+      <div class="mitem-overlay"><span class="mitem-label">🏔️ Highland Fox</span></div>
+    </div>
+
+  </div><!-- /masonry -->
+</div>
+
+<!-- ====== CTA ====== -->
+<div class="section-sm" style="padding-top:3rem;">
+  <div style="
+    background:linear-gradient(135deg,#1C1108,var(--surface-2));
+    border:1px solid var(--border);border-radius:24px;
+    padding:3rem 2.5rem;text-align:center;
+    max-width:1300px;margin:0 auto;
+  ">
+    <h2 style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:0.6rem;">Want to see even more? 🦊</h2>
+    <p style="color:var(--text-muted);margin-bottom:1.75rem;max-width:400px;margin-left:auto;margin-right:auto;font-size:0.95rem;">
+      Subscribers get access to thousands of exclusive, high-resolution fox photos and videos.
+    </p>
+    <a href="subscribe.html" class="btn btn-primary btn-lg">Start Free Trial →</a>
+  </div>
+</div>
+
+<div style="height:4rem;"></div>
+
+<!-- ====== LIGHTBOX ====== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lb-inner">
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">◀</button>
+    <img class="lb-img" id="lbImg" src="https://jessekettu.github.io/ND00CC04-3007/OnlyFoxes/kettu.jpg" alt="" />
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">▶</button>
+    <p class="lb-cap" id="lbCap"></p>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-fox">🦊</span>
+        <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+      </a>
+      <p>The world's most exclusive platform for fox content creators and their devoted fans.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="index.html">Browse Creators</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="profile.html">Profiles</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Account</h5>
+      <ul>
+        <li><a href="subscribe.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="subscribe.html">Plans</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Help</h5>
+      <ul>
+        <li><a href="contact.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 OnlyFoxes. All rights reserved. 🦊</p>
+    <p>Made with love for foxes everywhere.</p>
+  </div>
+</footer>
+
+<script>
+  /* ---- Hamburger ---- */
+  const ham = document.getElementById('ham');
+  const mNav = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mNav.classList.toggle('open');
+  });
+
+  /* ---- SLIDESHOW ---- */
+  const slides = document.querySelectorAll('.slide');
+  const dotsWrap = document.getElementById('slideDots');
+  const btnPrev = document.getElementById('sPrev');
+  const btnNext = document.getElementById('sNext');
+  const btnPlay = document.getElementById('playPause');
+  let current = 0;
+  let playing = true;
+  let timer;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'sdot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i+1));
+    d.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(d);
+  });
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dotsWrap.children[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dotsWrap.children[current].classList.add('active');
+  }
+
+  function startTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 4200);
+  }
+
+  btnNext.addEventListener('click', () => { goTo(current + 1); if (playing) startTimer(); });
+  btnPrev.addEventListener('click', () => { goTo(current - 1); if (playing) startTimer(); });
+
+  btnPlay.addEventListener('click', () => {
+    playing = !playing;
+    btnPlay.textContent = playing ? '⏸ Pause' : '▶ Play';
+    if (playing) startTimer(); else clearInterval(timer);
+  });
+
+  startTimer();
+
+  /* ---- FILTER ---- */
+  const flts = document.querySelectorAll('.flt');
+  const items = document.querySelectorAll('.mitem');
+
+  flts.forEach(f => {
+    f.addEventListener('click', () => {
+      flts.forEach(x => x.classList.remove('active'));
+      f.classList.add('active');
+      const cat = f.dataset.filter;
+      items.forEach(item => {
+        const tags = item.dataset.tags || '';
+        const show = cat === 'all' || tags.includes(cat);
+        item.style.display = show ? 'block' : 'none';
+      });
+    });
+  });
+
+  /* ---- LIGHTBOX ---- */
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCap = document.getElementById('lbCap');
+  const lbClose = document.getElementById('lbClose');
+  const lbPrev = document.getElementById('lbPrev');
+  const lbNext = document.getElementById('lbNext');
+
+  let visibleItems = () => [...items].filter(i => i.style.display !== 'none');
+  let lbIdx = 0;
+
+  function openLb(idx) {
+    const vis = visibleItems();
+    lbIdx = idx;
+    lbImg.src = vis[lbIdx].dataset.src;
+    lbImg.alt = vis[lbIdx].querySelector('img').alt;
+    lbCap.textContent = vis[lbIdx].dataset.cap;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLb() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+  function navLb(dir) {
+    const vis = visibleItems();
+    lbIdx = (lbIdx + dir + vis.length) % vis.length;
+    lbImg.style.opacity = '0';
+    setTimeout(() => {
+      lbImg.src = vis[lbIdx].dataset.src;
+      lbCap.textContent = vis[lbIdx].dataset.cap;
+      lbImg.style.opacity = '1';
+    }, 150);
+  }
+
+  items.forEach((item, i) => {
+    item.addEventListener('click', () => {
+      const vis = visibleItems();
+      const idx = vis.indexOf(item);
+      if (idx >= 0) openLb(idx);
+    });
+  });
+
+  lbClose.addEventListener('click', closeLb);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  lbPrev.addEventListener('click', () => navLb(-1));
+  lbNext.addEventListener('click', () => navLb(1));
+
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') navLb(-1);
+    if (e.key === 'ArrowRight') navLb(1);
+  });
+
+  lbImg.style.transition = 'opacity 0.15s ease';
+</script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foxette Savannah — OnlyFoxes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-fox">🦊</span>
+    <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+  </a>
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html">Browse</a></li>
+      <li><a href="profile.html" class="active">Profiles</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="subscribe.html">Subscribe</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <a href="login.html" class="btn btn-outline btn-sm">Log in</a>
+    <a href="subscribe.html" class="btn btn-primary btn-sm">Join Free</a>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Browse</a>
+  <a href="profile.html" class="active">Profiles</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="subscribe.html">Subscribe</a>
+  <a href="subscribe.html" class="btn btn-primary mobile-cta" style="text-align:center;border-radius:999px;">Join Free</a>
+</div>
+
+<!-- ====== COVER PHOTO ====== -->
+<div class="cover-wrap">
+  <img
+    src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1400&h=380&q=80"
+    alt="Foxette Savannah cover"
+    loading="eager"
+  />
+</div>
+
+<!-- ====== PROFILE HEADER ====== -->
+<div class="profile-shell">
+
+  <div class="profile-top">
+    <div class="profile-avatar-wrap">
+      <img
+        class="profile-avatar"
+        src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=200&h=200&q=80"
+        alt="Foxette Savannah avatar"
+        loading="eager"
+      />
+      <span class="live-badge">Live</span>
+    </div>
+
+    <div class="profile-actions">
+      <button class="btn btn-ghost btn-sm">💌 Message</button>
+      <button class="btn btn-ghost btn-sm">🔔 Follow</button>
+      <a href="subscribe.html" class="btn btn-primary">🦊 Subscribe</a>
+    </div>
+  </div>
+
+  <h1 class="profile-name">Foxette Savannah</h1>
+  <p class="profile-handle">@foxette &nbsp;·&nbsp; 🦊 Red Fox &nbsp;·&nbsp; 📍 Finnish Lapland</p>
+
+  <p class="profile-bio">
+    Born in the snowy forests of Lapland, I've spent my whole life exploring meadows, forests, and frozen lakes.
+    Every post is a window into the wild beauty of northern fox life — from my morning hunts to cozy den evenings.
+    Subscribe for exclusive behind-the-scenes access! 🐾
+  </p>
+
+  <div class="profile-tags">
+    <span class="profile-tag">🌨️ Winter Fox</span>
+    <span class="profile-tag">🍂 Nature</span>
+    <span class="profile-tag">🐾 Wildlife</span>
+    <span class="profile-tag">📸 Photography</span>
+    <span class="profile-tag">❄️ Lapland</span>
+  </div>
+
+  <div class="profile-stats-row">
+    <div class="pstat"><strong>248</strong> <span>Posts</span></div>
+    <div class="pstat"><strong>14,231</strong> <span>Subscribers</span></div>
+    <div class="pstat"><strong>9,99 mk</strong> <span>/kk</span></div>
+    <div class="pstat"><strong>⭐ Top 1%</strong> <span>Creator</span></div>
+    <div class="pstat"><strong>4.9 ★</strong> <span>Rating</span></div>
+  </div>
+
+</div><!-- /profile-shell -->
+
+<!-- ====== TABS ====== -->
+<div class="profile-tabs" id="tabs">
+  <button class="tab active" data-tab="posts">Posts</button>
+  <button class="tab" data-tab="tiers">Subscribe</button>
+  <button class="tab" data-tab="about">About</button>
+</div>
+
+<!-- ====== TAB CONTENT ====== -->
+<div class="profile-shell">
+
+  <!-- POSTS TAB -->
+  <div class="tab-panel active" id="tab-posts">
+    <div class="posts-grid">
+
+      <div class="post-thumb">
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=400&h=400&q=75" alt="Fox in snow" loading="lazy" />
+        <div class="post-hover">🔒</div>
+      </div>
+
+      <div class="post-thumb">
+        <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=400&h=400&q=75" alt="Fox portrait" loading="lazy" />
+        <div class="post-hover">❤️</div>
+      </div>
+
+      <div class="post-thumb">
+        <img src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=400&h=400&q=75" alt="Fox in forest" loading="lazy" />
+        <div class="post-hover">🔒</div>
+      </div>
+
+      <div class="post-thumb">
+        <img src="https://images.unsplash.com/photo-1607601544426-03e97b863e09?auto=format&fit=crop&w=400&h=400&q=75" alt="Fox kit" loading="lazy" />
+        <div class="post-hover">🔒</div>
+      </div>
+
+      <div class="post-thumb">
+        <img src="https://images.unsplash.com/photo-1580501170888-80668882d0b0?auto=format&fit=crop&w=400&h=400&q=75" alt="Fox close up" loading="lazy" />
+        <div class="post-hover">❤️</div>
+      </div>
+
+      <div class="post-thumb">
+        <img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?auto=format&fit=crop&w=400&h=400&q=75" alt="Fox in meadow" loading="lazy" />
+        <div class="post-hover">🔒</div>
+      </div>
+
+      <!-- Blurred/locked posts -->
+      <div class="post-thumb" style="position:relative;">
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=400&h=400&q=30" alt="Locked content" loading="lazy" style="filter:blur(12px);transform:scale(1.1);" />
+        <div class="post-hover" style="opacity:1;background:rgba(0,0,0,0.6);flex-direction:column;gap:0.35rem;">
+          <span style="font-size:1.5rem;">🔒</span>
+          <span style="font-size:0.72rem;color:#fff;font-weight:600;">Subscribe to unlock</span>
+        </div>
+      </div>
+
+      <div class="post-thumb" style="position:relative;">
+        <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?auto=format&fit=crop&w=400&h=400&q=30" alt="Locked content" loading="lazy" style="filter:blur(12px);transform:scale(1.1);" />
+        <div class="post-hover" style="opacity:1;background:rgba(0,0,0,0.6);flex-direction:column;gap:0.35rem;">
+          <span style="font-size:1.5rem;">🔒</span>
+          <span style="font-size:0.72rem;color:#fff;font-weight:600;">Subscribe to unlock</span>
+        </div>
+      </div>
+
+      <div class="post-thumb" style="position:relative;">
+        <img src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=400&h=400&q=30" alt="Locked content" loading="lazy" style="filter:blur(12px);transform:scale(1.1);" />
+        <div class="post-hover" style="opacity:1;background:rgba(0,0,0,0.6);flex-direction:column;gap:0.35rem;">
+          <span style="font-size:1.5rem;">🔒</span>
+          <span style="font-size:0.72rem;color:#fff;font-weight:600;">Subscribe to unlock</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem;padding-bottom:3rem;">
+      <a href="subscribe.html" class="btn btn-primary btn-lg">🔓 Unlock 242 more posts</a>
+    </div>
+  </div><!-- /tab-posts -->
+
+  <!-- TIERS TAB -->
+  <div class="tab-panel" id="tab-tiers">
+    <p style="color:var(--text-muted);margin-bottom:2rem;font-size:0.9rem;">
+      Choose the subscription tier that's right for you. Cancel anytime.
+    </p>
+
+    <div class="tiers-grid">
+
+      <div class="tier">
+        <div class="tier-emoji">🐾</div>
+        <div class="tier-name">Cub</div>
+        <div class="tier-price">4,99<sub> mk/mo</sub></div>
+        <ul class="tier-perks">
+          <li>Access to public posts</li>
+          <li>Monthly photo set (10 photos)</li>
+          <li>Community chat access</li>
+          <li>Supporter badge</li>
+        </ul>
+        <a href="subscribe.html" class="btn btn-outline btn-block">Get Started</a>
+      </div>
+
+      <div class="tier featured">
+        <span class="tier-crown">Most Popular</span>
+        <div class="tier-emoji">🦊</div>
+        <div class="tier-name">Fox Friend</div>
+        <div class="tier-price">9,99<sub> mk/mo</sub></div>
+        <ul class="tier-perks">
+          <li>Everything in Cub</li>
+          <li>Full post library (248 posts)</li>
+          <li>Weekly exclusive photo sets</li>
+          <li>Behind-the-scenes content</li>
+          <li>Priority DM response</li>
+        </ul>
+        <a href="subscribe.html" class="btn btn-primary btn-block">Subscribe Now</a>
+      </div>
+
+      <div class="tier">
+        <div class="tier-emoji">👑</div>
+        <div class="tier-name">Alpha Fox</div>
+        <div class="tier-price">19,99<sub> mk/mo</sub></div>
+        <ul class="tier-perks">
+          <li>Everything in Fox Friend</li>
+          <li>Monthly personalised photo</li>
+          <li>Name in monthly credits</li>
+          <li>Exclusive Q&amp;A sessions</li>
+          <li>Early access to all content</li>
+          <li>Direct line to Foxette 💌</li>
+        </ul>
+        <a href="subscribe.html" class="btn btn-gold btn-block">Go Alpha</a>
+      </div>
+
+    </div>
+    <div style="height:3rem;"></div>
+  </div><!-- /tab-tiers -->
+
+  <!-- ABOUT TAB -->
+  <div class="tab-panel" id="tab-about">
+    <div style="max-width:600px;padding:1rem 0 4rem;">
+
+      <h3 style="font-size:1.2rem;margin-bottom:1.25rem;">About Foxette 🦊</h3>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;font-size:0.9rem;color:var(--text-muted);line-height:1.75;">
+        <p>
+          Hi! I'm Foxette Savannah, a red fox living in the boreal forests of Finnish Lapland. I was born
+          in spring 2019 and have been navigating these snowy landscapes ever since.
+        </p>
+        <p>
+          My photographer friend started documenting my life three years ago, and together we share the
+          true, unfiltered reality of fox life — the hunts, the play, the cozy den naps, and the
+          breathtaking winter sunrises.
+        </p>
+        <p>
+          Joining OnlyFoxes means you become part of my world. No filters, no staged shots — just the
+          raw beauty of nature and one very photogenic fox. 🐾
+        </p>
+      </div>
+
+      <div style="margin-top:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;">
+        <h4 style="font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem;">Quick Facts</h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+          <div><span style="font-size:0.8rem;color:var(--text-dim);">Species</span><br><strong style="font-size:0.9rem;">Red Fox (Vulpes vulpes)</strong></div>
+          <div><span style="font-size:0.8rem;color:var(--text-dim);">Location</span><br><strong style="font-size:0.9rem;">Rovaniemi, Finland 📍</strong></div>
+          <div><span style="font-size:0.8rem;color:var(--text-dim);">Age</span><br><strong style="font-size:0.9rem;">~6 years</strong></div>
+          <div><span style="font-size:0.8rem;color:var(--text-dim);">Joined</span><br><strong style="font-size:0.9rem;">March 2022</strong></div>
+          <div><span style="font-size:0.8rem;color:var(--text-dim);">Favourite food</span><br><strong style="font-size:0.9rem;">Voles 🐭</strong></div>
+          <div><span style="font-size:0.8rem;color:var(--text-dim);">Hobbies</span><br><strong style="font-size:0.9rem;">Pouncing in snow ❄️</strong></div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /tab-about -->
+
+</div><!-- /profile-shell -->
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-fox">🦊</span>
+        <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+      </a>
+      <p>The world's most exclusive platform for fox content creators and their devoted fans.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="index.html">Browse Creators</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="profile.html">Top Profiles</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Account</h5>
+      <ul>
+        <li><a href="subscribe.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="subscribe.html">Plans</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Help</h5>
+      <ul>
+        <li><a href="contact.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 OnlyFoxes. All rights reserved. 🦊</p>
+    <p>Made with love for foxes everywhere.</p>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const ham = document.getElementById('ham');
+  const mNav = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mNav.classList.toggle('open');
+  });
+
+  // Tabs
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.tab-panel');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

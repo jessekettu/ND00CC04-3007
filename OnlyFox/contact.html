@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — OnlyFoxes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-wrap { max-width: 960px; margin: 0 auto; padding: 5rem 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
+    .contact-info h1 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); margin-bottom: 0.65rem; }
+    .contact-info p { font-size: 0.93rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 2rem; }
+    .contact-item { display: flex; gap: 0.85rem; align-items: flex-start; margin-bottom: 1.25rem; }
+    .c-icon { width: 42px; height: 42px; flex-shrink: 0; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-xs); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+    .c-text strong { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 0.15rem; }
+    .c-text span { font-size: 0.83rem; color: var(--text-muted); }
+    @media (max-width: 768px) { .contact-wrap { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-fox">🦊</span>
+    <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+  </a>
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index.html">Browse</a></li>
+      <li><a href="profile.html">Profiles</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="subscribe.html">Subscribe</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <a href="login.html" class="btn btn-outline btn-sm">Log in</a>
+    <a href="subscribe.html" class="btn btn-primary btn-sm">Join Free</a>
+    <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Browse</a>
+  <a href="profile.html">Profiles</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="subscribe.html">Subscribe</a>
+</div>
+
+<div class="contact-wrap">
+  <div class="contact-info">
+    <p class="section-label">Get in Touch</p>
+    <h1>Contact Us 🦊</h1>
+    <p>Have a question, a partnership idea, or just want to share a photo of a fox you saw today? We'd love to hear from you.</p>
+
+    <div class="contact-item">
+      <div class="c-icon">📧</div>
+      <div class="c-text">
+        <strong>General Enquiries</strong>
+        <span>hello@onlyfoxes.com</span>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="c-icon">🛡️</div>
+      <div class="c-text">
+        <strong>Trust & Safety</strong>
+        <span>safety@onlyfoxes.com</span>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="c-icon">🤝</div>
+      <div class="c-text">
+        <strong>Creator Partnerships</strong>
+        <span>creators@onlyfoxes.com</span>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="c-icon">📍</div>
+      <div class="c-text">
+        <strong>Headquarters</strong>
+        <span>Helsinki, Finland 🇫🇮</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-card" id="contactCard">
+    <div id="contactInner">
+      <h2>Send a message</h2>
+      <p class="sub-head">We reply within one business day.</p>
+
+      <div class="fg">
+        <label for="cName">Your name</label>
+        <input type="text" id="cName" placeholder="Luna Fox" />
+      </div>
+      <div class="fg">
+        <label for="cEmail">Email address</label>
+        <input type="email" id="cEmail" placeholder="luna@example.com" />
+      </div>
+      <div class="fg">
+        <label for="cSubject">Subject</label>
+        <input type="text" id="cSubject" placeholder="What's on your mind?" />
+      </div>
+      <div class="fg">
+        <label for="cMessage">Message</label>
+        <textarea id="cMessage" placeholder="Tell us everything…" style="min-height:120px;"></textarea>
+      </div>
+
+      <p id="contactError" style="color:#EF4444;font-size:0.82rem;margin-bottom:0.75rem;display:none;"></p>
+      <button class="btn btn-primary btn-block" id="contactBtn" type="button">Send Message</button>
+    </div>
+
+    <div class="success-box" id="contactSuccess">
+      <div class="s-icon">📬</div>
+      <h3>Message sent!</h3>
+      <p>Thanks for reaching out. We'll get back to you within one business day.</p>
+      <a href="index.html" class="btn btn-primary" style="margin-top:1.25rem;">Back to Browse</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-fox">🦊</span>
+        <span class="logo-text"><span class="of">Only</span><span class="foxes">Foxes</span></span>
+      </a>
+      <p>The world's most exclusive platform for fox content creators and their devoted fans.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="index.html">Browse Creators</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="profile.html">Top Profiles</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Account</h5>
+      <ul>
+        <li><a href="subscribe.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 OnlyFoxes. All rights reserved. 🦊</p>
+    <p>Made with love for foxes everywhere.</p>
+  </div>
+</footer>
+
+<script>
+  const ham = document.getElementById('ham');
+  const mobileNav = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => { ham.classList.toggle('open'); mobileNav.classList.toggle('open'); });
+
+  const contactBtn = document.getElementById('contactBtn');
+  const contactError = document.getElementById('contactError');
+  contactBtn.addEventListener('click', () => {
+    const name    = document.getElementById('cName').value.trim();
+    const email   = document.getElementById('cEmail').value.trim();
+    const subject = document.getElementById('cSubject').value.trim();
+    const message = document.getElementById('cMessage').value.trim();
+    contactError.style.display = 'none';
+    if (!name) { show('Please enter your name.'); return; }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { show('Please enter a valid email address.'); return; }
+    if (!message) { show('Please write a message.'); return; }
+    contactBtn.textContent = 'Sending…';
+    contactBtn.disabled = true;
+    setTimeout(() => {
+      document.getElementById('contactInner').style.display = 'none';
+      document.getElementById('contactSuccess').classList.add('visible');
+    }, 1000);
+  });
+  function show(msg) { contactError.textContent = msg; contactError.style.display = 'block'; }
+</script>
+</body>
+</html>
